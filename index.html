@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerSpeak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Reemplaza "bg-light" por "bg-dark" -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GamerSpeak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Descargar
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#" id="descargarAPK">Descargar APK</a></li>
+                            <li><a class="dropdown-item" href="#" id="descargarManual">Descargar Manual</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br>    
+
+    <h1>Bienvenido a la pagina oficial de GamerSpeak</h1>
+
+    <div class="background">
+        <div class="gallery">
+            <div class="card">
+                <div class="card__side">
+                    <img 
+                        src="images/img1.png" 
+                        alt="Universe 01"
+                    >
+                </div>
+                <div class="card__side card__side--back">
+                    <img
+                        src="images/img2.jpg" 
+                        alt="Universe 02"
+                    >
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__side">
+                    <img 
+                        src="images/img3.jpg" 
+                        alt="Universe 03"
+                    >
+                </div>
+                <div class="card__side card__side--back">
+                    <img 
+                        src="images/img4.jpg"
+                        alt="Universe 04"
+                    >
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__side">
+                    <img 
+                        src="images/img5.png"
+                        alt="Universe 05"
+                    >
+                </div>
+                <div class="card__side card__side--back">
+                    <img 
+                        src="images/img6.png"
+                        alt="Universe 06"
+                    >
+                </div>
+            </div>
+        </div>          
+    </div>
+    <br>
+    <h3>Descripción</h3>
+        <p>
+            GamerSpeak es una aplicación móvil diseñada para brindar a los entusiastas de los videojuegos un espacio 
+            dedicado para conectarse, compartir experiencias y encontrar jugadores afines. La aplicación permite a los 
+            usuarios publicar sobre sus juegos favoritos, buscar compañeros de juego, seguir a otros jugadores y 
+            participar en conversaciones relacionadas con el mundo de los videojuegos.
+        </p>
+        <br>
+
+        <h3>Características principales</h3>
+        <ul>
+            <li>Publicaciones y Comentarios</li>
+            <li> Perfiles de Usuario</li>
+            <li>Descubrimiento de Contenido</li>
+            <li>Interfaz Intuitiva y Atractiva</li>
+        </ul>
+<br>
+        <h3>¡Únete a la comunidad de GamerSpeak hoy mismo!</h3>
+        <p>
+            Estamos comprometidos a proporcionar la mejor experiencia de chat para gamers de todas las edades.
+            Ya sea que te guste jugar en PC, consolas o dispositivos móviles, GamerSpeak es tu solución para
+            una comunicación sin problemas mientras disfrutas de tus juegos favoritos.
+        </p>
+ <br>
+ <br>
+ <img src="images/logo3.png" />
+ <br>
+ <br>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("descargarManual").addEventListener("click", function() {
+    // Cambia la URL a la ubicación de tu archivo PDF
+    var pdfUrl = "pdf/prueba.pdf";
+
+    // Crea un enlace temporal para descargar el PDF
+    var a = document.createElement("a");
+    a.style.display = "none";
+    a.href = pdfUrl;
+    a.download = "manual.pdf"; // Nombre del archivo que se descargará
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    });
+    </script>
+
+<script>
+    document.getElementById("descargarAPK").addEventListener("click", function() {
+// Cambia la URL a la ubicación de tu archivo PDF
+var pdfUrl = "pdf/tuproyecto.apk";
+
+// Crea un enlace temporal para descargar el PDF
+var a = document.createElement("a");
+a.style.display = "none";
+a.href = pdfUrl;
+a.download = "tuproyecto.apk"; // Nombre del archivo que se descargará
+document.body.appendChild(a);
+a.click();
+document.body.removeChild(a);
+});
+</script>
+
+</body>
+</html>

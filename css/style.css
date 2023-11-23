@@ -1,0 +1,101 @@
+body {
+    background: radial-gradient(circle at 50% 50%, #192233 20%, #000);
+    color: #ddd6d6;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Esto se aplica al texto dentro del body, incluyendo los párrafos */
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center; /* Esto se aplica a los encabezados h1, que también están centrados */
+}
+
+p {
+    font-size: 18px;
+    text-align: left; /* Establece la alineación del texto de los párrafos a la izquierda, anulando el valor centrado del body */
+    margin-left: 50px;
+}
+
+ul, ol {
+    text-align: left; /* Alineación a la izquierda para listas */
+    margin-left: 70px; /* Agrega un margen a las listas */
+}
+
+li {
+    margin: 5px 0; /* Margen entre elementos de la lista */
+}
+
+
+/* Establecer el fondo y color del texto del menú desplegable */
+.dropdown-menu {
+    background-color: #111214; /* Fondo oscuro */
+}
+
+.dropdown-item {
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Cambiar el color del enlace cuando se pasa el mouse sobre él */
+.dropdown-item:hover {
+    background-color: #343a40; /* Color de fondo cuando se pasa el mouse */
+}
+
+
+
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Cartas de imagenes */
+
+.background {
+    background: radial-gradient(circle at 50% 50%, #273143 20%, #000);
+    display: grid; /* Usamos Grid Layout */
+    place-items: center; /* Centra el contenido tanto horizontal como verticalmente */
+    height: 50vh;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    perspective: 800px;
+}
+
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+  
+.card:hover {
+    transform: rotateY(0.5turn);
+}
+  
+.card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+
+.card__side--back {
+    transform: rotateY(0.5turn);
+}
+
+.card__side > img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
