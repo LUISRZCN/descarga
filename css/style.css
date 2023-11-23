@@ -3,6 +3,7 @@ body {
     color: #ddd6d6;
     font-family: Arial, sans-serif;
     text-align: center; /* Esto se aplica al texto dentro del body, incluyendo los párrafos */
+    overflow-x: hidden;
 }
 
 h1 {
